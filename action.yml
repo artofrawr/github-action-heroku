@@ -1,0 +1,26 @@
+name: 'Deploy Docker Images to Heroku App'
+author: 'Jens Fischer'
+description: 'A simple action to build, push and deploy containers to your Heroku app.'
+inputs:
+  email: 
+    description: 'Email linked to your Heroku account'
+    required: true
+  api_key:
+    description: 'Your Heroku API Key'
+    required: true
+  app_name:
+    description: 'Your Heroku App Name'
+    required: true
+  dockerfile:
+    description: 'Dockerfile filepath'
+    required: true
+  process:
+    description: 'Heroku process type'
+    required: false
+    default: 'web'
+branding:
+  icon: package
+  color: purple
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

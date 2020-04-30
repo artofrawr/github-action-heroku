@@ -1,0 +1,31 @@
+{
+  "name": "github-action-heroku",
+  "version": "1.0.0",
+  "description": "A simple action to build, push and deploy containers to your Heroku app.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @zeit/ncc build index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artofrawr/github-action-heroku.git"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "heroku",
+    "deploy",
+    "container",
+    "docker"
+  ],
+  "author": "Jens Fischer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artofrawr/github-action-heroku/issues"
+  },
+  "homepage": "https://github.com/artofrawr/github-action-heroku/#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/github": "^2.1.1"
+  }
+}
